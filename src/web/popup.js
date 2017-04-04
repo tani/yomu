@@ -1,6 +1,6 @@
 //const dictionary = require('./ejdict.json');
 let dictionary;
-if(require){
+if(window.require){
     dictionary = require("./ejdict.json");
 } else {
     fetch("ejdict.json")
