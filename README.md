@@ -1,7 +1,7 @@
 <div align="center">
     <img src="https://ta2gch.github.io/yomu/build/icon.png" width="100">
     <h1>Yomu</h1>
-    <p>和英辞書付きPDF閲覧ソフト</p>
+    <p>英和辞書付きPDF閲覧ソフト</p>
 </div>
 
 ## 特徴
