@@ -6,7 +6,10 @@
   "author": "TANIGUCHI Masaya",
   "license": "MIT",
   "scripts": {
-    "build": "build -mwl"
+    "build": "build -mwl",
+    "build:mac": "build -m",
+    "build:win": "build -w",
+    "build:linux": "build -l"
   },
   "devDependencies": {
     "electron": "^1.6.2",
