@@ -6,17 +6,13 @@
   "author": "TANIGUCHI Masaya",
   "license": "MIT",
   "scripts": {
-    "build": "electron-packager . yomu --all"
+    "build": "build -mwl"
   },
   "devDependencies": {
     "electron": "^1.6.2",
-    "electron-packager": "^8.6.0",
-    "rcedit": "^0.8.0"
+    "electron-builder": "^16.6.1"
   },
   "build": {
-    "appId": "space.moffice.yomu",
-    "win": {
-        "target": ["portable"]
-    }
+    "appId": "space.moffice.yomu"
   }
 }
