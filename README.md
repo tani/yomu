@@ -1,7 +1,7 @@
 <div align="center">
     <img src="https://ta2gch.github.io/yomu/build/icon.png" width="100">
     <h1>Yomu</h1>
-    <p>和英辞書付きPDF閲覧ソフト</p>
+    <p>英和辞書付きPDF閲覧ソフト</p>
 </div>
 
 ## 特徴
@@ -11,7 +11,7 @@
 
 ## インストール方法
 
-[リリースページ](https://github.com/ta2gch/releases)よりWindows版/Linux版をダウンロードしてください。
+[リリースページ](https://github.com/ta2gch/yomu/releases)よりWindows版/Linux版をダウンロードしてください。
 また、[ブラウザ版](https://ta2gch.github.io/yomu/src/web/viewer.html)もお使いただけます。
 
 ## 使い方
@@ -30,6 +30,6 @@
 - ["Trace-based Just-in-Time Type Specialization for Dynamic Languages"](http://www.stanford.edu/class/cs343/resources/tracemonkey.pdf) A. Gal, M. Franz, B. Eich, M. Shaver, and D. Anderson - Proceedings of the ACM SIGPLAN 2009 conference on Programming language design and implementation, 2009 
 ## 著作権表示
 
-このソフトウェアはMITライセンスの下で公開されています。
+このソフトウェアはApatcheライセンスの下で公開されています。
 
 Copyright 2017 TANIGUCHI Masaya All Rights Reserved.
