@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1024"
+   height="1024"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="icon.svg">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient5261"
+       osb:paint="gradient">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop5263" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop5265" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3759">
+      <stop
+         style="stop-color:#ff2a2a;stop-opacity:0.24705882;"
+         offset="0"
+         id="stop5231" />
+      <stop
+         style="stop-color:#ff2a2a;stop-opacity:0;"
+         offset="1"
+         id="stop3763" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3759"
+       id="linearGradient5229"
+       x1="142.10175"
+       y1="459.71429"
+       x2="957.89825"
+       y2="459.71429"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5289-0"
+       id="linearGradient5295-1"
+       x1="520"
+       y1="1024"
+       x2="503.28577"
+       y2="-876.57147"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient5289-0">
+      <stop
+         style="stop-color:#d40000;stop-opacity:1;"
+         offset="0"
+         id="stop5291-7" />
+      <stop
+         style="stop-color:#d40000;stop-opacity:0;"
+         offset="1"
+         id="stop5293-6" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.82"
+     inkscape:cx="668.76882"
+     inkscape:cy="608.11475"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     borderlayer="true"
+     inkscape:showpageshadow="false"
+     inkscape:snap-page="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1003"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="レイヤー 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-28.362183)">
+    <path
+       sodipodi:type="arc"
+       style="fill:#d35f5f;fill-opacity:1;stroke:#e6e6e6;stroke-width:50;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path5241-0"
+       sodipodi:cx="512"
+       sodipodi:cy="512"
+       sodipodi:rx="512"
+       sodipodi:ry="512"
+       d="m 1024,512 c 0,282.76979 -229.23021,512 -512,512 C 229.23021,1024 0,794.76979 0,512 0,229.23021 229.23021,0 512,0 c 282.76979,0 512,229.23021 512,512 z"
+       transform="matrix(0.87795709,0,0,0.86383497,68.97194,95.795171)" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3031"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#f2f2f2;fill-opacity:1;stroke:none;font-family:'IPAexゴシック';-inkscape-font-specification:'IPAexゴシック'"
+       transform="matrix(3.4737912,0,0,3.4737912,-858.65148,-1169.9901)"><flowRegion
+         id="flowRegion3033"><rect
+           id="rect3035"
+           width="309.7561"
+           height="321.95123"
+           x="343.90244"
+           y="386.19513"
+           style="fill:#f2f2f2" /></flowRegion><flowPara
+         id="flowPara3037"
+         style="font-size:144px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#f2f2f2;font-family:URW Chancery L;-inkscape-font-specification:URW Chancery L Bold Italic">Y</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3039"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:'IPAexゴシック';font-style:normal;font-weight:normal;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:'IPAexゴシック';font-stretch:normal;font-variant:normal"><flowRegion
+         id="flowRegion3041"><rect
+           id="rect3043"
+           width="168.29268"
+           height="45.121952"
+           x="273.17075"
+           y="383.7561" /></flowRegion><flowPara
+         id="flowPara3045"></flowPara></flowRoot>  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="icon"
+     style="display:inline">
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3027"
+       style="font-size:40px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:URW Chancery L;-inkscape-font-specification:URW Chancery L Bold Italic"
+       transform="matrix(3.3420049,0,0,3.3521121,-1064.7232,-780.7294)"><flowRegion
+         id="flowRegion3029"><rect
+           id="rect3031"
+           width="119.51219"
+           height="80.487808"
+           x="425.60974"
+           y="315.46341"
+           style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#ffffff;font-family:URW Chancery L;-inkscape-font-specification:URW Chancery L Bold Italic" /></flowRegion><flowPara
+         id="flowPara3033"
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:DejaVu Serif;-inkscape-font-specification:DejaVu Serif Bold Italic">Yomu</flowPara></flowRoot>  </g>
+</svg>

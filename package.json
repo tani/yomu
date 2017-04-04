@@ -1,0 +1,22 @@
+{
+  "name": "yomu",
+  "version": "0.0.1",
+  "description": "PDF viewer (with English Japanese dictionary)",
+  "main": "src/main.js",
+  "author": "TANIGUCHI Masaya",
+  "license": "MIT",
+  "scripts": {
+    "build": "electron-packager . yomu --all"
+  },
+  "devDependencies": {
+    "electron": "^1.6.2",
+    "electron-packager": "^8.6.0",
+    "rcedit": "^0.8.0"
+  },
+  "build": {
+    "appId": "space.moffice.yomu",
+    "win": {
+        "target": ["portable"]
+    }
+  }
+}
