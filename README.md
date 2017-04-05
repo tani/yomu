@@ -6,6 +6,7 @@
 
 ## 特徴
 
+- PDF.jsをベースにしたPDF閲覧ソフト
 - 標準でオフライン英和辞書を内蔵
 - 曖昧検索に対応
 
@@ -30,6 +31,6 @@
 - ["Trace-based Just-in-Time Type Specialization for Dynamic Languages"](http://www.stanford.edu/class/cs343/resources/tracemonkey.pdf) A. Gal, M. Franz, B. Eich, M. Shaver, and D. Anderson - Proceedings of the ACM SIGPLAN 2009 conference on Programming language design and implementation, 2009 
 ## 著作権表示
 
-このソフトウェアはApatcheライセンスの下で公開されています。
+このソフトウェアはApacheライセンスの下で公開されています。
 
 Copyright 2017 TANIGUCHI Masaya All Rights Reserved.
