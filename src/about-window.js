@@ -3,8 +3,9 @@ function showAboutWindow(){
         const path = require("path");
         const remote = require("electron").remote;
         const openAboutWindow = remote.require("about-window").default;
+        console.log(__dirname);
         openAboutWindow({
-            icon_path: path.join(__dirname, "../../../build/icon.png"),
+            icon_path: path.join(__dirname, "../../icon.png"),
             copyright: "Copyright (c) 2017 TANIGUCHI Masaya",
             bug_report_url: "https://github.com/ta2gch/yomu/issues",
             homepage: "https://ta2gch.github.com/yomu",

@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://ta2gch.github.io/yomu/build/icon.png" width="100">
+    <img src="https://ta2gch.github.io/yomu/src/icon.png" width="100">
     <h1>yomu</h1>
     <p>英和辞書付きPDF閲覧ソフト</p>
 </div>
