@@ -22,12 +22,13 @@ function createWindow () {
     protocol: 'file:',
     slashes: true,
     query: {
-        file: process.argv[1]
+        file: process.argv[1] != "." ? process.argv[1] : "compressed.tracemonkey-pldi-09.pdf"
     }
   }))
+  console.log(process.argv.toString());
 
   // Open the DevTools.
-  mainWindow.webContents.openDevTools()
+  // mainWindow.webContents.openDevTools()
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function () {

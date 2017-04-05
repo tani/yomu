@@ -13,3 +13,7 @@
         position: absolute;
         z-index: 1
 }
+#about::before {
+  content: url(pdf.js/web/images/secondaryToolbarButton-documentProperties.png);
+}
+
