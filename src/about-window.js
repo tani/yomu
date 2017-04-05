@@ -11,5 +11,7 @@ function showAboutWindow(){
             description: "和英辞書内蔵PDF表示ソフト",
             license: "Apache License 2.0"
         });
+    } else {
+        window.open("https://ta2gch.github.io/yomu", "_blank");
     }
 }
