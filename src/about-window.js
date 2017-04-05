@@ -7,7 +7,7 @@ function showAboutWindow(){
             icon_path: path.join(__dirname, "../../../build/icon.png"),
             copyright: "Copyright (c) 2017 TANIGUCHI Masaya",
             bug_report_url: "https://github.com/ta2gch/yomu/issues",
-            homepage: "https://github.com/ta2gch/yomu",
+            homepage: "https://ta2gch.github.com/yomu",
             description: "和英辞書内蔵PDF表示ソフト",
             license: "Apache License 2.0"
         });
