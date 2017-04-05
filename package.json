@@ -1,11 +1,12 @@
 {
   "name": "yomu",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "PDF viewer (with English Japanese dictionary)",
   "main": "src/main.js",
   "author": "TANIGUCHI Masaya",
   "license": "MIT",
   "scripts": {
+    "clean": "rm -rf dist **/*~",
     "build": "build -mwl",
     "build:mac": "build -m",
     "build:win": "build -w",
