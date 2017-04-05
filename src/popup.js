@@ -7,20 +7,20 @@ if(window.require){
         .then(_=>_.json())
         .then(_=>dictionary = _);
 }
-function edit(keyword) {
+function* edit(keyword) {
     const alphabet = "abcdefghijklmnopqrstuvwxyz";
     let candidates = new Array();
     for(let i = 0; i < keyword.length; i++) {
-        candidates.push(keyword.slice(0, i)+keyword.slice(i+1));
+        yield keyword.slice(0, i)+keyword.slice(i+1);
     }
     for(let i = 0; i < keyword.length; i++) {
         for(const letter of alphabet) {
-            candidates.push(keyword.slice(0, i)+letter+keyword.slice(i));
+            yield keyword.slice(0, i)+letter+keyword.slice(i);
         }
     }
     for(let i = 0; i < keyword.length; i++) {
         for(const letter of alphabet) {
-            candidates.push(keyword.slice(0, i)+letter+keyword.slice(i+1));
+            yield keyword.slice(0, i)+letter+keyword.slice(i+1);
         }
     }
     for(let i = 0; i < keyword.length - 1; i++) {
@@ -28,21 +28,32 @@ function edit(keyword) {
         const letter = target[i];
         target[i] = target[i+1];
         target[i+1] = letter;
-        candidates.push(target);
+        yield target;
     }
-    return candidates;
 }
-function getCandidates(keyword) {
-    const target = keyword.replace(/ing$/,'');
-    const edit0 = keyword.length > 43 ? [] : [target];
-    const edit1 = keyword.length > 43 ? [] : edit(target);
-    const edit2 = keyword.length > 20 ? [] : [].concat.apply([],edit(target).map(edit));
-    return Array.from(new Set([].concat.apply([], [edit0,edit1,edit2])));
+function* genCandidate(keyword) {
+    yield keyword;
+    if(keyword.length <= 43){
+        let e1 = edit(keyword);
+        for(let c1 = e1.next(); !c1.done; c1 = e1.next()) {
+            yield c1.value;
+        }
+    }
+    if(keyword.length <= 20) {
+        let e1 = edit(keyword);
+        for(let c1 = e1.next(); !c1.done; c1 = e1.next()) {
+            let e2 = edit(c1.value);
+            for(let c2 = e2.next(); !c2.done; c2 = e2.next()) {
+                yield c2.value;
+            }
+        }
+    }
 }
 function searchDefinision(keyword) {
-    for(const candidate of getCandidates(keyword)) {
-        if(candidate in dictionary) {
-            return `<strong>${candidate}</strong>:<br>${dictionary[candidate]}`;
+    let candidate = genCandidate(keyword);
+    for(let c = candidate.next(); !c.done; c = candidate.next()) {
+        if(c.value in dictionary) {
+            return `<strong>${c.value}</strong>:<br>${dictionary[c.value]}`;
         }
     }
 }
