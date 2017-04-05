@@ -49,19 +49,20 @@ function searchDefinision(keyword) {
 function createPopup() {
     const popup = document.createElement("div");
     popup.id = "popup";
-    popup.style.maxWidth = "300px";
-    popup.style.paddingTop = "10px";
-    popup.style.paddingBottom = "10px";
-    popup.style.paddingLeft = "10px";
-    popup.style.paddingRight = "10px";
-    popup.style.color = "#fff";
-    popup.style.backgroundColor = "rgba(50,50,50,0.8)";
-    popup.style.borderColor = "#666";
-    popup.style.borderStyle = "solid";
-    popup.style.borderWidth = "1px";
-    popup.style.position = "absolute";
-    popup.style.zIndex = 1;
-
+    Object.assign(popup.style, {
+        maxWidth: "300px",
+        paddingTop: "10px",
+        paddingBottom: "10px",
+        paddingLeft: "10px",
+        paddingRight: "10px",
+        color: "#ffffff",
+        backgroundColor: "rgba(50,50,50,0.8)",
+        borderColor: "#666666",
+        borderStyle: "solid",
+        borderWidth: "1px",
+        position: "absolute",
+        zIndex: 1
+    });
     const viewer = document.getElementById("viewer");
     viewer.style.position = "relative";
     viewer.appendChild(popup);
@@ -72,9 +73,11 @@ function showPopup(content, top, left) {
     const viewer = document.getElementById("viewer");
     const rect = viewer.getBoundingClientRect();
     popup.innerHTML = content;
-    popup.style.display = "block";
-    popup.style.top = top - rect.top + "px";
-    popup.style.left = left - rect.left + "px";
+    Object.assign(popup.style, {
+        display: "block",
+        top: top - rect.top + "px",
+        left: left - rect.left + "px"
+    });
 }
 function hidePopup() {
     const popup = document.getElementById("popup") || createPopup();
