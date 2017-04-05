@@ -12,7 +12,7 @@
 ## インストール方法
 
 [リリースページ](https://github.com/ta2gch/yomu/releases)よりWindows版/Linux版をダウンロードしてください。
-また、[ブラウザ版](https://ta2gch.github.io/yomu/src/web/viewer.html)もお使いただけます。
+また、[ブラウザ版](https://ta2gch.github.io/yomu/src/pdf.js/web/viewer.html)もお使いただけます。
 
 ## 使い方
 
