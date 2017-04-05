@@ -18,7 +18,7 @@ function createWindow () {
 
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({
-    pathname: path.join(__dirname, 'web/viewer.html'),
+    pathname: path.join(__dirname, 'pdf.js/web/viewer.html'),
     protocol: 'file:',
     slashes: true,
     query: {
