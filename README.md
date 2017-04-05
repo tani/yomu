@@ -29,6 +29,7 @@
 - [PDF.js](https://mozilla.github.io/pdf.js/) (PDF表示用ライブラリ)
 - [EJDict](https://github.com/kujirahand/EJDict) (パブリックドメインの英和辞書)
 - ["Trace-based Just-in-Time Type Specialization for Dynamic Languages"](http://www.stanford.edu/class/cs343/resources/tracemonkey.pdf) A. Gal, M. Franz, B. Eich, M. Shaver, and D. Anderson - Proceedings of the ACM SIGPLAN 2009 conference on Programming language design and implementation, 2009 
+
 ## 著作権表示
 
 このソフトウェアはApacheライセンスの下で公開されています。
