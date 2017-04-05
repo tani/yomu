@@ -1,0 +1,15 @@
+#download, #viewBookmark, #presentationMode {
+    display: none;
+}
+#popup {
+        max-width: 300px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: #ffffff;
+        background-color: rgba(50,50,50,0.8);
+        border: solid 1px #666666;
+        position: absolute;
+        z-index: 1
+}
