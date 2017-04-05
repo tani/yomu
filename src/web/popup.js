@@ -95,3 +95,8 @@ addEventListener("mouseup", ()=>{
         hidePopup();
     }
 });
+addEventListener("DOMContentLoaded", ()=>{
+    document.getElementById("download").style.display = "none";
+    document.getElementById("viewBookmark").style.display = "none";
+    document.getElementById("presentationMode").style.display = "none";
+});
