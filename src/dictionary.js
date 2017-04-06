@@ -31,6 +31,8 @@ function* edit(keyword) {
 }
 function* genCandidate(keyword) {
     yield keyword;
+    keyword = keyword.toLowerCase();
+    yield keyword;
     keyword = keyword.replace(/ie[sd]$/, 'y');
     keyword = keyword.replace(/ing$/,'i');
     yield keyword
