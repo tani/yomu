@@ -7,7 +7,9 @@ install:
   - brew install wine
   - wine --version
 script:
-  - npm run build
+  - npm run build:mac
+  - npm run build:win
+  - npm run build:linux
 deploy:
   provider: releases
   api_key:
