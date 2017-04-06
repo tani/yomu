@@ -1,5 +1,11 @@
-#download, #viewBookmark, #presentationMode {
-    display: none;
+#download,
+#viewBookmark,
+#presentationMode,
+#secondaryDownload,
+#secondaryViewBookmark,
+#secondaryPresentationMode
+{
+    display: none !important;
 }
 #popup {
         max-width: 300px;

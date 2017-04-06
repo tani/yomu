@@ -1,6 +1,6 @@
 {
   "name": "yomu",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "PDF viewer (with English Japanese dictionary)",
   "main": "src/main.js",
   "author": "TANIGUCHI Masaya",
