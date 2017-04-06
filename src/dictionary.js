@@ -8,29 +8,32 @@ if(window.require){
 }
 function* edit(keyword) {
     const alphabet = "abcdefghijklmnopqrstuvwxyz";
-    for(let i = 0; i < keyword.length; i++) {
-        yield keyword.slice(0, i)+keyword.slice(i+1);
-    }
-    for(let i = 0; i < keyword.length; i++) {
-        for(const letter of alphabet) {
-            yield keyword.slice(0, i)+letter+keyword.slice(i);
-        }
-    }
-    for(let i = 0; i < keyword.length; i++) {
+    for(let i = keyword.length - 1; i >= 0; i--) {
         for(const letter of alphabet) {
             yield keyword.slice(0, i)+letter+keyword.slice(i+1);
         }
     }
-    for(let i = 0; i < keyword.length - 1; i++) {
+    for(let i = keyword.length - 1; i >= 0; i--) {
         let target = `${keyword}`;
         const letter = target[i];
         target[i] = target[i+1];
         target[i+1] = letter;
         yield target;
     }
+    for(let i = keyword.length - 1; i >= 0; i--) {
+        yield keyword.slice(0, i)+keyword.slice(i+1);
+    }
+    for(let i = keyword.length - 1; i >= 0; i--) {
+        for(const letter of alphabet) {
+            yield keyword.slice(0, i)+letter+keyword.slice(i);
+        }
+    }
 }
 function* genCandidate(keyword) {
     yield keyword;
+    keyword = keyword.replace(/ie[sd]$/, 'y');
+    keyword = keyword.replace(/ing$/,'i');
+    yield keyword
     if(keyword.length <= 43){
         let e1 = edit(keyword);
         for(let c1 = e1.next(); !c1.done; c1 = e1.next()) {
