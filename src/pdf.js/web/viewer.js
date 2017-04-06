@@ -16,7 +16,7 @@
 
 'use strict';
 
-var DEFAULT_URL = 'compressed.tracemonkey-pldi-09.pdf';
+var DEFAULT_URL = '../../History_of_the_Internet.pdf';
 
 
   var pdfjsWebLibs = {

@@ -22,7 +22,7 @@ function createWindow () {
     protocol: 'file:',
     slashes: true,
     query: {
-        file: process.argv[1] != "." ? process.argv[1] : "compressed.tracemonkey-pldi-09.pdf"
+        file: process.argv[1] != "." ? process.argv[1] : "../../History_of_the_Internet.pdf"
     }
   }))
 

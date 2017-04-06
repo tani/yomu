@@ -22,12 +22,14 @@
 
 ![screenshot](https://ta2gch.github.io/yomu/screenshot/Screenshot.png)
 
-## 参考URL
+## 関連リンク
 
 - [yomu](http://github.com/ta2gch/yomu) (ホスティングサイト)
 - [PDF.js](https://mozilla.github.io/pdf.js/) (PDF表示用ライブラリ)
 - [EJDict](https://github.com/kujirahand/EJDict) (パブリックドメインの英和辞書)
+
 - ["Trace-based Just-in-Time Type Specialization for Dynamic Languages"](http://www.stanford.edu/class/cs343/resources/tracemonkey.pdf) A. Gal, M. Franz, B. Eich, M. Shaver, and D. Anderson - Proceedings of the ACM SIGPLAN 2009 conference on Programming language design and implementation, 2009 
+- ["History of the Internet"](https://en.wikipedia.org/wiki/History_of_the_Internet) Wikipedia (英語版)
 
 ## 著作権表示
 
