@@ -6,11 +6,9 @@
   "author": "TANIGUCHI Masaya",
   "license": "MIT",
   "scripts": {
+    "test": "echo 'Hello, World.'",
     "clean": "rm -rf dist **/*~",
-    "build": "build -mwl",
-    "build:mac": "build -m",
-    "build:win": "build -w",
-    "build:linux": "build -l"
+    "build": "build -mwl"
   },
   "devDependencies": {
     "electron": "^1.6.2",

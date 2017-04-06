@@ -2,14 +2,15 @@ os: osx
 language: node_js
 node_js:  node 
 install:
-  - npm install
   - brew update
-  - brew install wine
-  - wine --version
+  - brew install wine --without-x11
+  - brew install mono
+  - brew install gnu-tar graphicsmagick xz
+  - npm install
 script:
-  - npm run build:mac
-  - npm run build:win
-  - npm run build:linux
+  - npm run test
+before_deploy:
+  - npm run build
 deploy:
   provider: releases
   api_key:
