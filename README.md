@@ -2,6 +2,9 @@
     <img src="https://ta2gch.github.io/yomu/src/icon.png" width="100">
     <h1>yomu</h1>
     <p>英和辞書付きPDF閲覧ソフト</p>
+    <a href="https://travis-ci.org/ta2gch/yomu">
+        <img src="https://travis-ci.org/ta2gch/yomu.svg?branch=master">
+    </a>
 </div>
 
 ## 特徴
@@ -12,7 +15,7 @@
 
 ## インストール方法
 
-[リリースページ](https://github.com/ta2gch/yomu/releases)よりWindows版/Linux版をダウンロードしてください。
+[リリースページ](https://github.com/ta2gch/yomu/releases)よりWindows版/macOS版/Linux版をダウンロードしてください。
 また、[ブラウザ版](https://ta2gch.github.io/yomu/src/pdf.js/web/viewer.html)もお使いただけます。
 
 ## 使い方
