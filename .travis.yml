@@ -2,12 +2,12 @@ os: osx
 language: node_js
 node_js: node
 install:
-- brew update
-- brew install wine mono  gnu-tar graphicsmagick xz
 - npm install
 script:
 - npm run test
 before_deploy:
+- brew update
+- brew install wine mono  gnu-tar graphicsmagick xz
 - npm run build
 deploy:
   provider: releases
