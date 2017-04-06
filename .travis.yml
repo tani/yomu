@@ -1,20 +1,20 @@
 os: osx
 language: node_js
-node_js:  node 
+node_js: node
 install:
-  - brew update
-  - brew install wine mono  gnu-tar graphicsmagick xz
-  - npm install
+- brew update
+- brew install wine mono  gnu-tar graphicsmagick xz
+- npm install
 script:
-  - npm run test
+- npm run test
 before_deploy:
-  - npm run build
+- npm run build
 deploy:
   provider: releases
   api_key:
-    secure: jt8dBPV1lB3KxnzRM+JJhILP/JCL1qcO87kX4qb+ZTN/AoIeWCwqYo0hWIGduW9J+dITZQSRuqLLvyOK+YwLD1Zk+fG2ap4Fmnjc+lpf+As9AQUMT6Tgq7N23NiYdh7kN/zffNTk5D4Cqlp3I+xvDvt/wHw/odOTyCIIL6g3A+teiKciL1hYqqfZFcP+SSdIlrxcq8g2ItT/QV4j0af80z8Bhc+fOyeDmJHDHEHj8lIGl8wX/zgJwjf1KW1JCe/scBmmJD6BCEcPDKBCNOj7TGM8hTupOw5c1v4VQWR6okctqmmZpC6LquLxdGYBaxD8secD+DVJMQVAHDfUuDgfnX0oRideTQVUffq1rCq5LoUuWlP+I5dDpClMGqvVdDEGf0gQBJsuWX09qrwWFdn9P+vrFDmp4YLzFdWwJ+1sCcVP5ujP5DkDr7UUNJpBJM8l7By2mi2LILEMws/HGotSYx9ViE16hP3veYwROgvxsL5ZYLChtOjfOowkG7lzjlbS/E5GZ3tv7kDjNFQBrvRHdNdq8umXV08dV8OO9E/Sg/LVczzm61ouDTfJfpmU/RMLawid90BK3tIs5mghWNXqxAMHh9F12EiMmSdC10z3e38oKDu8CBE6GaRyfsg+q6J7GI177zfNY34Cnb1oatxVARoACH/Ha5kS/gzpMDgNhHY=
+    secure: bxurkYiigqSo7nZTr/mDANvu5rPN1WRw7JJXjQKp1dux90TUS0JFk1i3t4yvkj621scledElVJ2hw110U9Mk7JyEUuLZc7j2Wvo8ONxWGJa61nI98DoR8cyrJ6OVN3SU5v6DpUKJweRrv39sCX0PoHEauaHnsLzfxXM7XbdYvCSwaj9CCnRwXwQYY+JTgJgT6YI6MPhzRgi7N/70TR+LSaNUIGvcX2JtNec4pffV9VnkENZIFFinPDwCvS2ZLWleWDAAqKxdAVhTv/7LHc19fYyu0TACM1POFBKP8sOQJarTarMt0gVvyX6HnCzirGGNKM+mKALC5lzdb/u+OKCDEbRDY9SiTXGu20uxW77+71hA4tw1w/A1ZGZ5Kh2UOxfEnLqz/nSYuVf904eF4NoZtW2h7nAUwkUbnkT55vI3QeDYsVn6r+wKsuIeIGrZKPp2fpnDV2r7Y167VYKK8GeapblDwNTD+/Z9WgkIQbnymEJ51gOaWUmFDdFFK/pr+bPcEEaeIhUXvkWbCq5/M3LjPbpXojIG9IKoswMlhCKMLyTfx1Xuw1NhBRiDAzgYj+dtbkugtX20346k7T8fvyYxU7EgdJnZ3Iu+jTLfAHbz4GpyP2LwzbZixFBSFxLRhiIw4sPDmGXNCCOJBIJHRfxKmwVG/3eR4IiyYSM4GQUiiMA=
   file_glob: true
-  file: 'dist/yomu*'
+  file: dist/yomu*
   on:
     tags: true
     repo: ta2gch/yomu
