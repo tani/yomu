@@ -4,7 +4,7 @@
   "description": "PDF viewer (with English Japanese dictionary)",
   "main": "src/main.js",
   "author": "TANIGUCHI Masaya",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "scripts": {
     "test": "echo 'Hello, World.'",
     "clean": "rm -rf dist **/*~",
