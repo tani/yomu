@@ -17,7 +17,13 @@
     "electron-builder": "^16.6.1"
   },
   "build": {
-    "appId": "space.moffice.yomu"
+    "appId": "space.moffice.yomu",
+    "mac": {
+        "category": "public.app-category.utilities"
+    },
+    "linux": {
+        "category": "Office"
+    }
   },
   "dependencies": {
     "about-window": "^1.6.1"

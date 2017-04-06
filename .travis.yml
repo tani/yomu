@@ -1,0 +1,17 @@
+os: osx
+language: node_js
+node_js:  node 
+cache: yarn
+install:
+  - yarn
+script:
+  - yarn run build
+deploy:
+  provider: releases
+  api_key:
+    secure: jt8dBPV1lB3KxnzRM+JJhILP/JCL1qcO87kX4qb+ZTN/AoIeWCwqYo0hWIGduW9J+dITZQSRuqLLvyOK+YwLD1Zk+fG2ap4Fmnjc+lpf+As9AQUMT6Tgq7N23NiYdh7kN/zffNTk5D4Cqlp3I+xvDvt/wHw/odOTyCIIL6g3A+teiKciL1hYqqfZFcP+SSdIlrxcq8g2ItT/QV4j0af80z8Bhc+fOyeDmJHDHEHj8lIGl8wX/zgJwjf1KW1JCe/scBmmJD6BCEcPDKBCNOj7TGM8hTupOw5c1v4VQWR6okctqmmZpC6LquLxdGYBaxD8secD+DVJMQVAHDfUuDgfnX0oRideTQVUffq1rCq5LoUuWlP+I5dDpClMGqvVdDEGf0gQBJsuWX09qrwWFdn9P+vrFDmp4YLzFdWwJ+1sCcVP5ujP5DkDr7UUNJpBJM8l7By2mi2LILEMws/HGotSYx9ViE16hP3veYwROgvxsL5ZYLChtOjfOowkG7lzjlbS/E5GZ3tv7kDjNFQBrvRHdNdq8umXV08dV8OO9E/Sg/LVczzm61ouDTfJfpmU/RMLawid90BK3tIs5mghWNXqxAMHh9F12EiMmSdC10z3e38oKDu8CBE6GaRyfsg+q6J7GI177zfNY34Cnb1oatxVARoACH/Ha5kS/gzpMDgNhHY=
+  file_glob: true
+  file: 'dist/yomu*'
+  on:
+    tags: true
+    repo: ta2gch/yomu
