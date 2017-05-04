@@ -1,3 +1,5 @@
+// This is a part of product published under the Apache-2.0 license.
+// See also LICENSE.
 function showAboutWindow(){
     if (window.require) {
         const path = require("path");

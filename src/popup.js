@@ -1,3 +1,5 @@
+// This is a part of the product published under the Apache-2.0 license.
+// See also LICENSE.
 function createPopup() {
     const popup = document.createElement("div");
     popup.id = "popup";
