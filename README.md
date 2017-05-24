@@ -18,6 +18,14 @@
 [リリースページ](https://github.com/ta2gch/yomu/releases)よりWindows版/macOS版/Linux版をダウンロードしてください。
 また、[ブラウザ版](https://ta2gch.github.io/yomu/src/pdf.js/web/viewer.html)もお使いただけます。
 
+### NPM版
+
+npm からもインストール可能になりました。
+
+```
+npm install -g ta2gch/yomu
+```
+
 ## 使い方
 
 調べたい英単語をドラックあるいはダブルクリックすることで、
