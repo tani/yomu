@@ -12,7 +12,6 @@
     "build": "build -mwl"
   },
   "devDependencies": {
-    "electron": "^1.6.2",
     "electron-builder": "^16.6.1"
   },
   "build": {
@@ -24,7 +23,9 @@
         "category": "Office"
     }
   },
+  "bin": "bin/cli.js",
   "dependencies": {
+    "electron": "^1.6.2",
     "about-window": "^1.6.1"
   }
 }
