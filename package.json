@@ -6,7 +6,8 @@
   "author": "TANIGUCHI Masaya",
   "license": "Apache-2.0",
   "scripts": {
-    "test": "echo 'Hello, World.'",
+    "pretest": "cd src && make && cp *.wasm ..",
+    "test": "electron .",
     "clean": "rm -rf dist **/*~",
     "dist-clean": "npm run clean && rm -rf node_modules",
     "build": "build -mwl"
@@ -25,7 +26,7 @@
   },
   "bin": "bin/cli.js",
   "dependencies": {
-    "electron": "^1.6.2",
+    "electron": "^1.7.9",
     "about-window": "^1.6.1"
   }
 }

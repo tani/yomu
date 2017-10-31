@@ -3,6 +3,15 @@ const app = electron.app
 const BrowserWindow = electron.BrowserWindow
 const path = require('path')
 const url = require('url')
+const bindings = require('./bindings')
+
+bindings.onRuntimeInitialized = () => {
+	const dict = new bindings.makeDictionary()
+	electron.ipcMain.on('synchronous-message', (event, arg) => {
+		event.returnValue = dict.lookup(arg).valueOr('')
+	})
+}
+
 let query = {}
 if(process.argv.length === 3){
   if(path.isAbsolute(process.argv[2])){
@@ -17,7 +26,13 @@ if(process.argv.length === 3){
 }
 let mainWindow
 function createWindow () {
-  mainWindow = new BrowserWindow({width: (800 * 1.2), height: (600 * 1.2)})
+  mainWindow = new BrowserWindow({
+	  width: (800 * 1.2),
+	  height: (600 * 1.2),
+	  webPreferences: {
+		  webSecurity: false
+	  }
+  })
   mainWindow.setMenu(null)
   mainWindow.loadURL(url.format({
     pathname: path.join(__dirname, 'pdf.js/web/viewer.html'),
