@@ -6,6 +6,8 @@
 #include <string>
 #include <optional>
 #include <fstream>
+#include <locale>
+#include <codecvt>
 #include "json.hpp"
 #include "dictionary.hpp"
 
@@ -32,8 +34,9 @@ Dictionary makeDictionary(const emscripten::val& data) {
 	return Dictionary(source, 3);
 }
 */
-std::string value_or(const std::optional<std::string>& opt, const std::string& otherwise) {
-	return opt.value_or(std::forward<const std::string&>(otherwise));
+std::wstring value_or(const std::optional<std::string>& opt, const std::string& otherwise) {
+	std::wstring_convert<std::codecvt_utf8<wchar_t>, wchar_t> cv;
+	return cv.from_bytes(opt.value_or(std::forward<const std::string&>(otherwise)));
 }
 
 EMSCRIPTEN_BINDINGS(dictionary) {

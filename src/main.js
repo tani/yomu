@@ -5,6 +5,7 @@ const path = require('path')
 const url = require('url')
 const bindings = require('./bindings')
 
+bindings.locateFile = (name) => `src/${name}`
 bindings.onRuntimeInitialized = () => {
 	const dict = new bindings.makeDictionary()
 	electron.ipcMain.on('synchronous-message', (event, arg) => {
