@@ -21,19 +21,7 @@ Dictionary makeDictionary() {
 	}
 	return Dictionary(source, 3);
 }
-/*
-Dictionary makeDictionary(const emscripten::val& data) {
-	std::unordered_map<std::string, std::string> source;
-	const auto& entries  = emscripten::vecFromJSArray<emscripten::val>(data);
-	const auto& begin    = std::begin(entries);
-	const auto& end      = std::end(entries);
-	const auto& inserter = std::inserter(source, std::end(source));
-	std::transform(begin, end, inserter, [](emscripten::val entry){ 
-		return std::make_pair(entry[0].as<std::string>(), entry[1].as<std::string>());
-	});
-	return Dictionary(source, 3);
-}
-*/
+
 std::wstring value_or(const std::optional<std::string>& opt, const std::string& otherwise) {
 	std::wstring_convert<std::codecvt_utf8<wchar_t>, wchar_t> cv;
 	return cv.from_bytes(opt.value_or(std::forward<const std::string&>(otherwise)));

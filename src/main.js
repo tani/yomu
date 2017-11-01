@@ -3,15 +3,6 @@ const app = electron.app
 const BrowserWindow = electron.BrowserWindow
 const path = require('path')
 const url = require('url')
-const bindings = require('./bindings')
-
-bindings.locateFile = (name) => `src/${name}`
-bindings.onRuntimeInitialized = () => {
-	const dict = new bindings.makeDictionary()
-	electron.ipcMain.on('synchronous-message', (event, arg) => {
-		event.returnValue = dict.lookup(arg).valueOr('')
-	})
-}
 
 let query = {}
 if(process.argv.length === 3){

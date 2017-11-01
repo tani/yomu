@@ -6,7 +6,7 @@
   "author": "TANIGUCHI Masaya",
   "license": "Apache-2.0",
   "scripts": {
-    "pretest": "cd src && make && cp *.wasm ..",
+    "pretest": "cd src && make",
     "test": "electron .",
     "clean": "rm -rf dist **/*~",
     "dist-clean": "npm run clean && rm -rf node_modules",
