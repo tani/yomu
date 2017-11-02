@@ -1,4 +1,5 @@
 #include <emscripten/bind.h>
+#include <emscripten/val.h>
 #include <unordered_map>
 #include <vector>
 #include <utility>
@@ -8,16 +9,17 @@
 #include <fstream>
 #include <locale>
 #include <codecvt>
-#include "json.hpp"
 #include "dictionary.hpp"
 
-Dictionary makeDictionary() {
+Dictionary makeDictionary(emscripten::val data) {
 	std::unordered_map<std::string, std::string> source;
-	std::ifstream data("ejdict.json");
-	nlohmann::json json;
-	data >> json;
-	for(auto it = std::begin(json); it != std::end(json); ++it) {
-		source.insert(std::make_pair<std::string, std::string>(it.key(), it.value()));
+	std::wstring_convert<std::codecvt_utf8<wchar_t>, wchar_t> cv;
+	auto entries = emscripten::val::global("Object").call<emscripten::val>("entries", data);
+	for(int i = 0; i < entries["length"].as<int>(); i++) {
+		std::pair<std::string, std::string> entry;
+		entry.first = cv.to_bytes(entries[i][0].as<std::wstring>());
+		entry.second = cv.to_bytes(entries[i][1].as<std::wstring>());
+		source.insert(entry);
 	}
 	return Dictionary(source, 3);
 }
