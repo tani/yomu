@@ -1,20 +1,29 @@
 os: osx
 language: node_js
-node_js: node
+node_js:
+    - node
+sudo: required
+services: 
+    - docker
+before_install:
+    - docker run -dit --nameemscripten -v $(pwd):/src trzeci/emscripten:sdk-incoming-64bit bash
 install:
-- brew update
-- brew install wine mono  gnu-tar graphicsmagick xz
-- npm install
+    - npm install
 script:
-- npm run test
+    - docker exec -it emscripten make
+    - npm run test
 before_deploy:
-- npm run build
+    - brew update
+    - brew install wine mono  gnu-tar graphicsmagick xz
+    - npm run build
 deploy:
   provider: releases
   api_key:
     secure: mL2CKY5DSjwcrX2xvo6l9lrkUrxYky3OE9HK7HsxZ6s3XUrRyXQO/472Bamo7CKXwyfUa/48L1OAC41R6VTQ2A3c/AJo6PrXPv9d2lZ4icomf5ocovF+DWmtVXnW1wIY48mv0xmB/iqTSDqoV/DBFnbQgY7y7W5CBJY3gjNLrtfdKw+dJbOOJMN77R8SjGBa1PU7WqnNAhidbX2DitFM9OBIj05o6lvBkbFjM5fVV77lfV5jrSXTweHF6Kq7Puv8iODNHTYtF7YF58VI4sI4gNHd/HSUscjr3Wl+jIcrqZBtzxdbyN6WpWIzVBOyjismQrefsfhX+fajzkIHS5Jizw9ObuP8PRdDRzL34W2IngsOF78j5AuslbSStLccqYjBmzDBmVvY/N5QXgCGauMIWjfYv2s822+Yw9yUaYEWEbfAwbpxlcqrNu85bA1H+h3J85gNqz9HaUJDadtpapZLm9w4byLAGUelJo2D/1UDyLFPy3cECI5ajQ4jnnDu+4v0bmZuGhpstT93QEYhfoxfFy0t2gPpkyOIzB3MrW3tDkPzOyR2DHh09TirqstVBmGa4aNvbcNObxHGTcgl2vWUPG0tgEvM7AFZ/qnpNkYaHMrUmhPgdKKYA42Ydyu7EjnPuDW+jtt4QcY4ingoSXGWZbAFmKfyBm6VdNUZjDsetes=
   file_glob: true
-  file: 'dist/*.{dmg,AppImage,exe}'
+  file: 
+    - 'dist/yomu*'
+    - 'src/pdf.js/web/bindings*'
   on:
     tags: true
     repo: ta2gch/yomu
