@@ -1,12 +1,11 @@
 {
   "name": "yomu",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "PDF viewer (with English Japanese dictionary)",
   "main": "src/main.js",
   "author": "TANIGUCHI Masaya",
   "license": "Apache-2.0",
   "scripts": {
-    "pretest": "cd src && make",
     "test": "electron .",
     "clean": "rm -rf dist **/*~",
     "dist-clean": "npm run clean && rm -rf node_modules",
