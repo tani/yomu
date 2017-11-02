@@ -1,13 +1,13 @@
 CC  = emcc
 SRC = dictionary.cpp bindings.cpp
 OUT = pdf.js/web/bindings.js
-DAT = ejdict.json
-OPT = -O3 -std=c++1z -s WASM=1 -s TOTAL_MEMORY=52428800 --bind --embed-file $(DAT)
+OPT = -O2 -std=c++1z
+OPT += --bind
+OPT += -s WASM=1
+OPT += -s TOTAL_MEMORY=52428800
+OPT += -s MODULARIZE=1
 
-all:
+all: $(OUT)
+
+$(OUT):
 	$(CC) $(SRC) -o $(OUT) $(OPT)
-
-.PHONY: clean
-
-clean:
-	rm -f *~
