@@ -9,5 +9,5 @@ OPT += -s MODULARIZE=1
 
 all: $(OUT)
 
-$(OUT):
+$(OUT): $(SRC)
 	$(CC) $(SRC) -o $(OUT) $(OPT)
