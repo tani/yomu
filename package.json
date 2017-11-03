@@ -24,8 +24,10 @@
     }
   },
   "bin": "bin/cli.js",
+  "devDependencies": {
+    "electron": "^1.7.9"
+  },
   "dependencies": {
-    "electron": "^1.7.9",
     "about-window": "^1.6.1"
   }
 }
