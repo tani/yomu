@@ -1,0 +1,8 @@
+*.png binary
+*.jpg binary
+*.ico binary
+*.svg binary
+*.pdf binary
+*.icns binary
+*.jpeg binary
+*.wasm binary
