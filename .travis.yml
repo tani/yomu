@@ -5,7 +5,7 @@ sudo: required
 services:
     - docker
 install:
-    - docker run -dit --name emscripten -v $(pwd):/src trzeci/emscripten-sdk-incoming-64bit bash
+    - docker run -dit --name emscripten -v $(pwd):/src trzeci/emscripten:sdk-incoming-64bit bash
     - npm install
 script:
     - docker exec -it emscripten make
