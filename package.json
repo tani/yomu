@@ -12,21 +12,19 @@
     "build": "build -mwl"
   },
   "devDependencies": {
-    "electron-builder": "^16.6.1"
+    "electron": "^1.7.9",
+    "electron-builder": "^19.43.4"
   },
   "build": {
     "appId": "space.moffice.yomu",
     "mac": {
-        "category": "public.app-category.utilities"
+      "category": "public.app-category.utilities"
     },
     "linux": {
-        "category": "Office"
+      "category": "Office"
     }
   },
   "bin": "bin/cli.js",
-  "devDependencies": {
-    "electron": "^1.7.9"
-  },
   "dependencies": {
     "about-window": "^1.6.1"
   }
