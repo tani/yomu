@@ -3,7 +3,7 @@
 
 Module({
     ENVIRONMENT: (window.require ? 'NODE' : 'WEB'),
-    locateFile: ((filename) => (window.require ? './src/pdf.js/web/' : './') + filename)
+    locateFile: ((filename) => (window.require ? __dirname+'/' : './') + filename)
 }).then(async (Module) => {
     const data = window.require
         ? require('../../ejdict.json')
