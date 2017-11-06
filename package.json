@@ -12,6 +12,7 @@
     "build": "build -mwl"
   },
   "devDependencies": {
+    "electron": "^1.7.9",
     "electron-builder": "^19.43.4"
   },
   "build": {
@@ -25,7 +26,6 @@
   },
   "bin": "bin/cli.js",
   "dependencies": {
-    "electron": "^1.7.9",
     "about-window": "^1.6.1"
   }
 }

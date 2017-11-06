@@ -23,6 +23,7 @@
 npm からもインストール可能になりました。
 
 ```
+npm install -g electron
 npm install -g ta2gch/yomu
 ```
 
