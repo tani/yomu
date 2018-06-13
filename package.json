@@ -12,8 +12,8 @@
     "build": "build -mwl"
   },
   "devDependencies": {
-    "electron": "^1.7.9",
-    "electron-builder": "^19.43.4"
+    "electron": "^2.0.2",
+    "electron-builder": "^20.15.1"
   },
   "build": {
     "appId": "space.moffice.yomu",
