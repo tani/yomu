@@ -9,6 +9,8 @@
 
 ## 特徴
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/asciian/yomu.svg)](https://greenkeeper.io/)
+
 - PDF.jsをベースにしたPDF閲覧ソフト
 - 標準でオフライン英和辞書を内蔵
 - 曖昧検索に対応
