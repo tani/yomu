@@ -12,7 +12,9 @@
     "build": "build -mwl"
   },
   "devDependencies": {
-    "electron-builder": "^16.6.1"
+    "about-window": "^1.12.1",
+    "electron": "^3.0.4",
+    "electron-builder": "^20.28.4"
   },
   "build": {
     "appId": "org.www-jp.yomu",
@@ -24,8 +26,5 @@
     }
   },
   "bin": "bin/cli.js",
-  "dependencies": {
-    "electron": "^3.0.4",
-    "about-window": "^1.12.1"
-  }
+  "dependencies": {}
 }

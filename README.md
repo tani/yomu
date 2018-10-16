@@ -18,14 +18,6 @@
 [リリースページ](https://github.com/xtaniguchimasaya/yomu/releases)よりWindows版/macOS版/Linux版をダウンロードしてください。
 また、[ブラウザ版](https://xtaniguchimasaya.github.io/yomu/src/pdf.js/web/viewer.html)もお使いただけます。
 
-### NPM版
-
-npm からもインストール可能になりました。
-
-```
-npm install -g xtaniguchimasaya/yomu
-```
-
 ## 使い方
 
 調べたい英単語をドラックあるいはダブルクリックすることで、
