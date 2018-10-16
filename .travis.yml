@@ -17,7 +17,7 @@ deploy:
   file: 'dist/*.{dmg,AppImage,exe}'
   on:
     tags: true
-    repo: ta2gch/yomu
+    repo: xtaniguchimasaya/yomu
 env:
   global:
     secure: PolFGPP7geB2ht6niCDB6CM/0YE0guaLid0YW/oRrTIAComo2Lf/0nfxuK7PitLiV2u9pL8kXCKxy/d1E19TNYwHtNF/XghZSxgyS3/v8lXUp3gm43Xu9LylWwt5KdniRrVbsOiOv4OZaan1A6FdCArbjrHnTjPJQFlssP/3yKJyKroJ1A2Wl1759YNux0nf3ZXwR4t6+Bliswu12/KRVgewmPUz3ecSGwP7YMFjZyH1WHJ1m/IvUEqfgVIpUi0MA3DYJbsdGT5d7ou7BGfDBn8V4Y/+SthiVnOk37PSCcZsnyRmX0Vad0WGmY9N+3q0K07lQtkXHZA4dy1hBkXqkmEaB+OY6nD1el4TIvHrru97TDmwmVxaidux+WQzX0F7fjJjHJCfTKKRtx1EHvLMnjFdipRX9uAXihDOcQm2bVri+K60+8PYfFgI+akc6ydV4R+DcvauXFbkMSRQ1JVPxdJ/OaiB3fbEohmnKNCo+SIv00CePBiJGAeG93RGQDaTIkW0YVSfyar2iSWCthnvMHbS3fhHvc/AvpTNcXjwoZPccovx3vxxTgqC6SNPwCLNjNBGdIFFVfUxmjLZYL+2bRkl0HW48AimG5DSzN15RHXOW+aGQ0eX2SbAXRpsl+U6xI/xd6wck+7C+HCANXTSMsOZAafFttqt7xetb0fP9gE=
