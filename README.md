@@ -1,9 +1,9 @@
 <div align="center">
-    <img src="https://ta2gch.github.io/yomu/src/icon.png" width="100">
+    <img src="https://xtaniguchimasaya.github.io/yomu/src/icon.png" width="100">
     <h1>yomu</h1>
     <p>英和辞書付きPDF閲覧ソフト</p>
-    <a href="https://travis-ci.org/ta2gch/yomu">
-        <img src="https://travis-ci.org/ta2gch/yomu.svg?branch=master">
+    <a href="https://travis-ci.org/xtaniguchimasaya/yomu">
+        <img src="https://travis-ci.org/xtaniguchimasaya/yomu.svg?branch=master">
     </a>
 </div>
 
@@ -15,15 +15,15 @@
 
 ## インストール方法
 
-[リリースページ](https://github.com/ta2gch/yomu/releases)よりWindows版/macOS版/Linux版をダウンロードしてください。
-また、[ブラウザ版](https://ta2gch.github.io/yomu/src/pdf.js/web/viewer.html)もお使いただけます。
+[リリースページ](https://github.com/xtaniguchimasaya/yomu/releases)よりWindows版/macOS版/Linux版をダウンロードしてください。
+また、[ブラウザ版](https://xtaniguchimasaya.github.io/yomu/src/pdf.js/web/viewer.html)もお使いただけます。
 
 ### NPM版
 
 npm からもインストール可能になりました。
 
 ```
-npm install -g ta2gch/yomu
+npm install -g xtaniguchimasaya/yomu
 ```
 
 ## 使い方
@@ -31,11 +31,11 @@ npm install -g ta2gch/yomu
 調べたい英単語をドラックあるいはダブルクリックすることで、
 単語の意味を単語周辺に表示します。
 
-![screenshot](https://ta2gch.github.io/yomu/screenshot/Screenshot.png)
+![screenshot](https://xtaniguchimasaya.github.io/yomu/screenshot/Screenshot.png)
 
 ## 関連リンク
 
-- [yomu](http://github.com/ta2gch/yomu) (ホスティングサイト)
+- [yomu](http://github.com/xtaniguchimasaya/yomu) (ホスティングサイト)
 - [PDF.js](https://mozilla.github.io/pdf.js/) (PDF表示用ライブラリ)
 - [EJDict](https://github.com/kujirahand/EJDict) (パブリックドメインの英和辞書)
 

@@ -15,7 +15,7 @@
     "electron-builder": "^16.6.1"
   },
   "build": {
-    "appId": "space.moffice.yomu",
+    "appId": "org.www-jp.yomu",
     "mac": {
         "category": "public.app-category.utilities"
     },
