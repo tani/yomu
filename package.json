@@ -1,6 +1,6 @@
 {
   "name": "yomu",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "PDF viewer (with English Japanese dictionary)",
   "main": "src/main.js",
   "author": "TANIGUCHI Masaya",
@@ -17,10 +17,10 @@
   "build": {
     "appId": "org.www-jp.yomu",
     "mac": {
-        "category": "public.app-category.utilities"
+      "category": "public.app-category.utilities"
     },
     "linux": {
-        "category": "Office"
+      "category": "Office"
     }
   },
   "bin": "bin/cli.js",
