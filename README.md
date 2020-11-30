@@ -1,10 +1,7 @@
 <div align="center">
-    <img src="https://xtaniguchimasaya.github.io/yomu/src/icon.png" width="100">
+    <img src="https://tani.github.io/yomu/src/icon.png" width="100">
     <h1>yomu</h1>
     <p>英和辞書付きPDF閲覧ソフト</p>
-    <a href="https://travis-ci.org/xtaniguchimasaya/yomu">
-        <img src="https://travis-ci.org/xtaniguchimasaya/yomu.svg?branch=master">
-    </a>
 </div>
 
 ## 特徴
@@ -15,19 +12,19 @@
 
 ## インストール方法
 
-[リリースページ](https://github.com/xtaniguchimasaya/yomu/releases)よりWindows版/macOS版/Linux版をダウンロードしてください。
-また、[ブラウザ版](https://xtaniguchimasaya.github.io/yomu/src/pdf.js/web/viewer.html)もお使いただけます。
+[リリースページ](https://github.com/tani/yomu/releases)よりWindows版/macOS版/Linux版をダウンロードしてください。
+また、[ブラウザ版](https://tani.github.io/yomu/src/pdf.js/web/viewer.html)もお使いただけます。
 
 ## 使い方
 
 調べたい英単語をドラックあるいはダブルクリックすることで、
 単語の意味を単語周辺に表示します。
 
-![screenshot](https://xtaniguchimasaya.github.io/yomu/screenshot/Screenshot.png)
+![screenshot](https://tani.github.io/yomu/screenshot/Screenshot.png)
 
 ## 関連リンク
 
-- [yomu](http://github.com/xtaniguchimasaya/yomu) (ホスティングサイト)
+- [yomu](http://github.com/tani/yomu) (ホスティングサイト)
 - [PDF.js](https://mozilla.github.io/pdf.js/) (PDF表示用ライブラリ)
 - [EJDict](https://github.com/kujirahand/EJDict) (パブリックドメインの英和辞書)
 
@@ -38,4 +35,4 @@
 
 このソフトウェアはApacheライセンス(第二版)の下で公開されています。
 
-Copyright 2017 TANIGUCHI Masaya All Rights Reserved.
+Copyright 2017-2020 TANIGUCHI Masaya All Rights Reserved.
