@@ -1,6 +1,7 @@
 appId: casa.docs.yomu
 
 mac:
+  target: dmg
   category: public.app-category.utilities
 
 win:
@@ -9,5 +10,5 @@ win:
 linux:
   target: appImage
 
-mac:
-  target: dmg
+publish:
+  - github
