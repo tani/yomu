@@ -16,21 +16,6 @@
     "electron": "^11.0.3",
     "electron-builder": "^22.9.1"
   },
-  "build": {
-    "appId": "casa.docs.yomu",
-    "mac": {
-      "category": "public.app-category.utilities"
-    },
-    "linux": {
-      "category": "Office"
-    },
-    "publish": {
-      "provider": "github",
-      "owner": "tani",
-      "repo": "yomu",
-      "releaseType": "release"
-    }
-  },
   "bin": "bin/cli.js",
   "dependencies": {}
 }

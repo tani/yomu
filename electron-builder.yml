@@ -1,0 +1,13 @@
+appId: casa.docs.yomu
+
+mac:
+  category: public.app-category.utilities
+
+win:
+  target: portable
+
+linux:
+  target: appImage
+
+mac:
+  target: dmg
