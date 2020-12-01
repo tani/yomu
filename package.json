@@ -8,7 +8,8 @@
   "scripts": {
     "clean": "rm -rf dist **/*~",
     "dist-clean": "npm run clean && rm -rf node_modules",
-    "build": "electron-builder -mwl"
+    "dist": "electron-builder -mwl",
+    "pack": "electron-builder -mwl --dir"
   },
   "devDependencies": {
     "about-window": "^1.13.4",
@@ -22,6 +23,12 @@
     },
     "linux": {
       "category": "Office"
+    },
+    "publish": {
+      "provider": "github",
+      "owner": "tani",
+      "repo": "yomu",
+      "releaseType": "release"
     }
   },
   "bin": "bin/cli.js",
