@@ -9,12 +9,12 @@ function showAboutWindow(){
         openAboutWindow({
             icon_path: path.join(__dirname, "../../icon.png"),
             copyright: "Copyright (c) 2017 TANIGUCHI Masaya",
-            bug_report_url: "https://github.com/ta2gch/yomu/issues",
-            homepage: "https://ta2gch.github.com/yomu",
+            bug_report_url: "https://github.com/tani/yomu/issues",
+            homepage: "https://tani.github.io/yomu",
             description: "英和辞書内蔵PDF表示ソフト",
             license: "Apache License 2.0"
         });
     } else {
-        window.open("https://ta2gch.github.io/yomu", "_blank");
+        window.open("https://tani.github.io/yomu", "_blank");
     }
 }
